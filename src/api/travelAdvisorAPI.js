@@ -184,7 +184,7 @@ export const getPlacesData = async (type, sw, ne) => {
 
     const query = buildQuery(type, clampedSw, clampedNe);
     const response = await axios.post(
-      'https://overpass-api.de/api/interpreter',
+      'https://overpass.kumi.systems/api/interpreter',
       query,
       { headers: { 'Content-Type': 'text/plain' } },
     );
